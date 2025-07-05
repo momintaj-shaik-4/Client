@@ -14,7 +14,7 @@ const DeliveryCard = ({ delivery, onCardClick, onCancelClick, currentUser }) => 
         <img
           src={
             delivery.itemImage
-              ? `http://localhost:5000/uploads/deliveries/${delivery.itemImage}`
+              ? `https://server-kbh2.onrender.com/uploads/deliveries/${delivery.itemImage}`
               : "/default-box.png"
           }
           alt="Item"

@@ -39,7 +39,7 @@ export default function Login({ setUser }) {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = "http://localhost:5000/api/auth/google";
+    window.location.href = "https://server-kbh2.onrender.com/api/auth/google";
   };
 
   return (
@@ -100,13 +100,13 @@ export default function Login({ setUser }) {
         </button>
 
         <button
-  type="button"
-  onClick={handleGoogleLogin}
-  className="w-full mt-3 flex items-center justify-center gap-2 border border-gray-300 bg-white text-gray-700 py-2 rounded hover:bg-gray-100 transition"
->
-  <FcGoogle className="text-xl" />
-  <span>Login with Google</span>
-</button>
+          type="button"
+          onClick={handleGoogleLogin}
+          className="w-full mt-3 flex items-center justify-center gap-2 border border-gray-300 bg-white text-gray-700 py-2 rounded hover:bg-gray-100 transition"
+        >
+          <FcGoogle className="text-xl" />
+          <span>Login with Google</span>
+        </button>
 
         <div className="mt-4 text-center text-sm">
           Don&apos;t have an account?{" "}

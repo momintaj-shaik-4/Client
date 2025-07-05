@@ -33,7 +33,7 @@ export default function ChangePassword() {
 
     try {
       const res =await axios.put(
-  "http://localhost:5000/api/auth/change-password",
+  "https://server-kbh2.onrender.com/api/auth/change-password",
   {
     currentPassword: form.currentPassword.trim(),
     newPassword: form.newPassword.trim()
